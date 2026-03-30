@@ -1,0 +1,49 @@
+# IDE & Editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.trae/
+
+# Build & Dependency Management
+target/
+dist/
+node_modules/
+build/
+bin/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pkgs/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Temporary Files
+*.log
+hs_err_pid*
+replay_pid*
+*.tmp
+*.temp
+
+# Database (Local H2 or SQLite)
+*.mv.db
+*.trace.db
+
+# Project Specific
+MMAU-main/mmau-test-mini-results.json
+frontend/.env.development
+frontend/.env.production

@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+httpx
+requests
+transformers
+accelerate
+tiktoken
+soundfile
+scipy
+torch
+torchvision
+torchaudio
+flask
+gunicorn

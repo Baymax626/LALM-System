@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram id="system-use-case" name="Page-1">
+        <mxGraphModel dx="726" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="boundary" value="语音理解平台系统边界" style="swimlane;whiteSpace=wrap;html=1;startSize=23;collapsible=0;recursiveResize=0;expand=0;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="320" y="40" width="480" height="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-register" value="用户注册" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="50" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-login" value="用户登录" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="140" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-audio-input" value="语音录入" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="230" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-inference" value="深度推理分析" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="320" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-reasoning-display" value="思考过程展示" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="340" y="320" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-history" value="历史记录查询" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="410" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-record-detail" value="推理结果导出" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="500" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-account-manage" value="个人信息管理" style="ellipse;whiteSpace=wrap;html=1;" parent="boundary" vertex="1">
+                    <mxGeometry x="120" y="590" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-include" value="include" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="boundary" source="uc-inference" target="uc-reasoning-display" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor-user" value="普通用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="350" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-register" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-audio-input" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-inference" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-history" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-record-detail" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=12;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-user" target="uc-account-manage" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

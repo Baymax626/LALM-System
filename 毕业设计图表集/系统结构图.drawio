@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram id="system-structure" name="Page-1">
+        <mxGraphModel dx="847" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="node-root" value="基于 Qwen2.5-Omni 深度思考的语音理解平台" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="380" y="40" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="node-user" value="用户端功能" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14" parent="1" vertex="1">
+                    <mxGeometry x="460" y="140" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-root-user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node-root" target="node-user" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mod-auth" value="账号管理模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13" parent="1" vertex="1">
+                    <mxGeometry x="220" y="240" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="mod-voice" value="语音交互模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13" parent="1" vertex="1">
+                    <mxGeometry x="380" y="240" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="mod-think" value="深度思考模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13" parent="1" vertex="1">
+                    <mxGeometry x="550" y="240" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="mod-record" value="记录管理模块" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13" parent="1" vertex="1">
+                    <mxGeometry x="710" y="240" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-user-auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node-user" target="mod-auth" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-user-voice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node-user" target="mod-voice" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-user-think" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node-user" target="mod-think" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-user-record" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node-user" target="mod-record" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth-reg" value="注&lt;br&gt;册" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth-login" value="登&lt;br&gt;录" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-auth-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-auth" target="auth-reg" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-auth-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-auth" target="auth-login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="voice-rec" value="音&lt;br&gt;频&lt;br&gt;录&lt;br&gt;制" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="voice-show" value="结&lt;br&gt;果&lt;br&gt;展&lt;br&gt;示" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-voice-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-voice" target="voice-rec" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-voice-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-voice" target="voice-show" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="think-int" value="意&lt;br&gt;图&lt;br&gt;识&lt;br&gt;别" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="think-ded" value="逻&lt;br&gt;辑&lt;br&gt;推&lt;br&gt;导" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="think-ans" value="最&lt;br&gt;终&lt;br&gt;回&lt;br&gt;答" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-think-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-think" target="think-int" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-think-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-think" target="think-ded" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-think-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-think" target="think-ans" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rec-his" value="历&lt;br&gt;史&lt;br&gt;查&lt;br&gt;询" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="rec-det" value="推&lt;br&gt;理&lt;br&gt;详&lt;br&gt;情" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="340" width="40" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-rec-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-record" target="rec-his" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e-rec-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mod-record" target="rec-det" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
